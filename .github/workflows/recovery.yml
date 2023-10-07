@@ -12,6 +12,7 @@ jobs:
 
        - name: remove pkg and setting repo
          run: |
+            ssh-keygen -t ed25519 -C "coinz1112@gmail.com"
             sudo apt update && sudo apt install python-is-python3 
             sudo apt install wget zip
             wget -qO - https://github.com/SA-17/Recovery_builder/raw/main/scripts/cleanup.sh  | bash
@@ -20,6 +21,7 @@ jobs:
             sudo curl --create-dirs -L -o /usr/local/bin/repo -O -L https://storage.googleapis.com/git-repo-downloads/repo
             sudo chmod +w /usr/local/bin/repo
             sudo chmod +x /usr/local/bin/repo
+            
 
        - name: Adding and Sync source
          run: |
