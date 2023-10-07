@@ -9,7 +9,7 @@ export BRANCH="twrp-9.0" # the branch of manifest
 export DEVICE="Infinix-X6835" # codename used in device tree
 export DT_LINK="https://github.com/coinZee/Infinix-X6835.git" # device tree link
 export DT_BRANCH="main" # device tree branch
-export VENDOR="Infinix" # device manufacturer or vendor
+export VENDOR="infinix" # device manufacturer or vendor
 export TARGET="bootimg" # build method: recoveryimage, bootimage, vendorboot
 export TYPE="omni" # recovery type: omni, twrp, something else
 
