@@ -12,9 +12,7 @@ jobs:
 
        - name: remove pkg and setting repo
          run: |
-            sudo apt update && sudo apt upgrade -y
-            rm -r /usr/local/bin/repo
-            sudo apt install python-is-python3 
+            sudo apt update && sudo apt install python-is-python3 
             sudo apt install wget zip
             wget -qO - https://github.com/SA-17/Recovery_builder/raw/main/scripts/cleanup.sh  | bash
             sudo -E apt-get -qq update
