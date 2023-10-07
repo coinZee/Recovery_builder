@@ -18,7 +18,7 @@ jobs:
             sudo -E apt-get -qq update
             sudo -E apt-get -qq install bc build-essential tar zip curl libstdc++6 git wget gcc clang libssl-dev repo rsync flex curl  bison aria2
             sudo curl --create-dirs -L -o /usr/local/bin/repo -O -L https://storage.googleapis.com/git-repo-downloads/repo
-            sudo chmod a+w /usr/local/bin/repo
+            sudo chmod +w /usr/local/bin/repo
 
        - name: Adding and Sync source
          run: |
